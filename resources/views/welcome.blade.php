@@ -31,8 +31,7 @@
            {{ csrf_field() }}
            <button type="submit" style="max-height:25px; margin-left:20px">Mark Complete</button>
            </form>
-           </div>
-           
+           </div>           
            @endforeach
 
            <form method="post" action="{{ route('saveItem') }}" accesskey="UTF-8">
