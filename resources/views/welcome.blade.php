@@ -23,14 +23,15 @@
             
         <div>
            <h1>Todo List </h1><br>
-           <form method="POST" action="{{ route('saveItem') }}">
+
+           <form method="post" action="{{ route('saveItem') }}">
            {{ csrf_field() }}
            <label for="listItem">New todo List</label> <br>
            <input type="text" name="listItem"><br><br>
 
            <button>Save Item</button>
 
-         </form>
+          </form>
            
         </div>
             
