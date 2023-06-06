@@ -24,8 +24,12 @@
         <div>
            <h1>Todo List </h1><br>
 
-           <form method="post" action="{{ route('saveItem') }}">
-           {{ csrf_field() }}
+           @foreach ($listItems as $listItem)
+           <p>Item: {{ $listItem->name }}</p>
+           @endforeach
+
+           <form method="post" action="{{ route('saveItem') }}" accesskey="UTF-8">
+           
            <label for="listItem">New todo List</label> <br>
            <input type="text" name="listItem"><br><br>
 
